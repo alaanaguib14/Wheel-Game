@@ -1,10 +1,8 @@
 body {
     font-family: 'Poppins', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-align: center;
-    /* Subtle gradient background */
     background: linear-gradient(135deg, #ece9e6 0%, #ffffff 100%);
     color: #333;
-    /* Flexbox for centering */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -14,11 +12,11 @@ body {
 
   #game-container {
     background-color: rgba(255, 255, 255, 0.9);
-    padding: 30px 40px; /* Increased padding */
+    padding: 30px 40px;
     border-radius: 15px;
     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
-    max-width: 500px; /* Limit container width */
-    width: 90%; /* Responsive width */
+    max-width: 500px;
+    width: 90%; 
   }
 
   h1 {
@@ -26,29 +24,25 @@ body {
       margin-bottom: 25px;
   }
 
-  /* --- Wheel Styles --- */
   #wheel-container {
     position: relative;
-    /* Reduced size */
     width: 300px;
     height: 300px;
-    margin: 10px auto 25px auto; /* Adjusted margin */
+    margin: 10px auto 25px auto;
   }
 
   #wheel {
     border-radius: 50%;
-    /* Add a border to the canvas element itself */
     border: 4px solid #34495e;
-    box-shadow: 0 0 10px rgba(0,0,0,0.15); /* Subtle shadow on wheel */
+    box-shadow: 0 0 10px rgba(0,0,0,0.15);
   }
 
-  /* --- Info Display (Sentence, Score, Timer) --- */
    #sentence-display {
-    margin: 25px; /* Increased margin */
-    font-size: 1.2em; /* Slightly larger */
-    font-weight: 600; /* Bolder */
+    margin: 25px;
+    font-size: 1.2em;
+    font-weight: 600; 
     color: #2c3e50;
-    /* min-height: 50px; Ensure space even when empty */
+    /* min-height: 50px; */
     padding: 10px;
     background-color: #ecf0f1;
     border-radius: 8px;
@@ -57,14 +51,14 @@ body {
 
   #info-panel {
       display: flex;
-      justify-content: space-around; /* Space out score and timer */
+      justify-content: space-around;
       margin-bottom: 25px;
       font-size: 1.1em;
       font-weight: 600;
   }
 
    #timer, #score {
-    background-color: #e9ecef; /* Light background */
+    background-color: #e9ecef;
     padding: 8px 15px;
     border-radius: 8px;
     color: #495057;
@@ -72,58 +66,55 @@ body {
    }
 
 
-  /* --- Button Styles --- */
   .button-area {
-      display: flex; /* Arrange buttons in a row */
-      flex-wrap: wrap; /* Allow wrapping on small screens */
-      justify-content: center; /* Center buttons */
-      gap: 10px; /* Spacing between buttons */
+      display: flex; 
+      flex-wrap: wrap; 
+      justify-content: center; 
+      gap: 10px;
       margin-top: 10px;
   }
 
   .button {
-    padding: 12px 25px; /* Increased padding */
-    font-size: 1em; /* Relative font size */
-    font-weight: 600; /* Bolder text */
+    padding: 12px 25px; 
+    font-size: 1em; 
+    font-weight: 600; 
     cursor: pointer;
-    border-radius: 8px; /* Slightly more rounded */
-    border: none; /* Remove default border */
-    color: white; /* White text */
+    border-radius: 8px; 
+    border: none; 
+    color: white; 
     transition: background-color 0.3s ease, transform 0.1s ease;
     box-shadow: 0 2px 5px rgba(0,0,0,0.15);
   }
 
   .button:hover {
-    opacity: 0.9; /* Slight fade on hover */
+    opacity: 0.9;
   }
   .button:active {
-    transform: translateY(1px); /* Press effect */
-     box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    transform: translateY(1px);
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
   }
 
-  /* Specific Button Colors */
   #start-game-btn, #spin-btn {
-      background-color: #2ecc71; /* Green */
+    background-color: #2ecc71;
   }
   #start-game-btn:hover, #spin-btn:hover {
-      background-color: #27ae60;
+    background-color: #27ae60;
   }
 
   #repeat-es-btn, #repeat-ar-btn {
-      background-color: #3498db; /* Blue */
+    background-color: #3498db;
   }
    #repeat-es-btn:hover, #repeat-ar-btn:hover {
-      background-color: #2980b9;
+    background-color: #2980b9;
   }
 
   #pass-btn {
-      background-color: #e67e22; /* Orange */
+    background-color: #e67e22;
   }
   #pass-btn:hover {
-      background-color: #d35400;
+    background-color: #d35400;
   }
 
-  /* Style for hidden elements */
   .hidden {
     display: none;
   }
